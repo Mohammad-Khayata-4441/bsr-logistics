@@ -21,18 +21,20 @@
   }
 
   h1 {
-    @apply md:text-[54px];
+    @apply text-[54px];
   }
   h2 {
-    @apply md:text-[48px];
+    @apply text-[48px];
   }
   h3 {
-    @apply md:text-[32px];
+    @apply text-[32px];
   }
   h5 {
-    @apply md:text-[24px]
+    @apply text-[24px]
   }
-
+  p{
+    @apply text-[18px]
+  }
 }
 
 @layer components {
