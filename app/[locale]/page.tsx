@@ -36,8 +36,6 @@ export default function Home() {
               <h3>Our</h3>
               <p >
                 Explore our successful projects that showcase our commitment to excellence and innovation.
-
-
               </p>
             </div>
 
@@ -46,9 +44,6 @@ export default function Home() {
               </h3>
               <p >
                 Discover our current projects that are transforming the logistics industry.
-
-
-
               </p>
             </div>
             <div className="col-span-6"></div>
@@ -58,9 +53,6 @@ export default function Home() {
               <h3>Future</h3>
               <p >
                 Get a glimpse of our upcoming projects that will revolutionize the logistics landscape.
-
-
-
               </p>
             </div>
           </div>

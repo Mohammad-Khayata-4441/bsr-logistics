@@ -1,4 +1,5 @@
- import { Link } from '@/locale/i18n'
+"use client"
+import { Link } from '@/locale/i18n'
 import React from 'react'
 
 export default function Navbar() {

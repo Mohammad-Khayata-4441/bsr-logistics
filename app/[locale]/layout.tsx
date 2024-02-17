@@ -52,8 +52,8 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
       <body className={`${inter.className} ${almarai.className} ${syne.variable}`}>
-        <Navbar/>
         <Providers locale={locale} messages={messages} >
+        <Navbar/>
           {children}
 
         </Providers>
