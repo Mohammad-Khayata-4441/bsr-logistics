@@ -6,7 +6,7 @@ import CreateMiddleWare from "next-intl/middleware";
 
 // Can be imported from a shared config
 export const locales = ['en'];
-export const localePrefix = 'as-needed'
+export const localePrefix = 'always'
 
 export default getRequestConfig(async ({ locale }) => {
     // Validate that the incoming `locale` parameter is valid

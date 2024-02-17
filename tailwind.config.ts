@@ -7,14 +7,30 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+  
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      height:{
+        "window":'calc(100vh - 120px)'
       },
+      container:{
+        center:true,
+      
+      },
+      colors:{
+        'app-beige':'#FFF1D8',
+        primary:{
+          'DEFAULT':"#F2555A",
+        }
+      },
+
+      fontFamily: {
+        'syne': ['var(--font-syne)']
+      }
+
     },
   },
-  plugins: [],
+  plugins: [
+
+  ],
 };
 export default config;

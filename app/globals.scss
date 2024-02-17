@@ -2,32 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+@layer utilities {}
+
+@layer base {
+  body {
+    @apply bg-app-beige;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-syne font-bold;
+  }
+
+  h1 {
+    @apply md:text-[54px];
+  }
+  h2 {
+    @apply md:text-[48px];
+  }
+  h3 {
+    @apply md:text-[32px];
+  }
+  h5 {
+    @apply md:text-[24px]
+  }
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@layer components {
+  .app-btn {
+    @apply px-20 py-4 transition-all duration-200;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    &.outlined {
+      @apply border border-black hover:bg-white
+    }
+
+    &.btn-primary {
+      @apply bg-primary text-white;
+
+      &.outlined {
+        @apply bg-transparent text-primary border border-primary hover:bg-primary hover:text-white;
+
+      }
+    }
+
+
+
+
+  }
+  .app-input{
+    @apply py-4 px-4 border-2
   }
 }
